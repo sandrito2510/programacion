@@ -5,7 +5,7 @@ public class Programa340 {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
 
-        System.out.print("Dime cuantos numeros quieres ver de la serie de Fibonacci11: ");
+        System.out.print("Dime cuantos numeros quieres ver de la serie de Fibonacci: ");
         int num = teclado.nextInt();
 
         int aux = 1;
