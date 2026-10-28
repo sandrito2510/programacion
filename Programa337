@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+public class PR337 {
+    public static void main(String[] args) {
+
+        Scanner teclado = new Scanner(System.in);
+
+        int A;
+        int B;
+        int contador = 0;
+        int divisores;
+
+        System.out.print("Introduce el primer numero: ");
+        A = teclado.nextInt();
+
+        System.out.print("Introduce el segundo numero: ");
+        B = teclado.nextInt();
+
+        while (A > B) {
+            System.out.println("Error. El primer numero debe ser menor o igual al segundo.");
+
+            System.out.print("Introduce el primer numero: ");
+            A = teclado.nextInt();
+
+            System.out.print("Introduce el segundo numero: ");
+            B = teclado.nextInt();
+        }
+
+        System.out.println("Numeros primos entre " + A + " y " + B + ":");
+
+        for (int i = A; i <= B; i++) {
+
+            if (i >= 2) {
+                divisores = 0;
+
+                for (int j = 1; j <= i; j++) {
+                    if (i % j == 0) {
+                        divisores++;
+                    }
+                }
+
+                if (divisores == 2) {
+                    System.out.println(i);
+                    contador++;
+                }
+            }
+        }
+
+        System.out.println("Cantidad de numeros primos: " + contador);
+
+        teclado.close();
+    }
+}
