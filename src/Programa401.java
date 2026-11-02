@@ -22,7 +22,7 @@ public class Programa401 {
         } else {
             System.out.println("Se deniega la hipoteca.");
 
-            if (!edadCorrecta {
+            if (!edadCorrecta) {
                 System.out.println("Motivo: la edad no es adecuada.");
             }
             if (!ingresosCorrectos ) {
