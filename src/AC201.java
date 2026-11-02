@@ -2,7 +2,7 @@ public class AC201 {
     public static void main(String[] args) {
 
         // --- Variables con valor directo ---
-        boolean isOccupied = false;          // solo true/false
+        boolean isOccupied = true;          // solo true/false
         char lastKeyPressed = 'M';           // un único carácter
         int pago = 5000000;                   // supera el rango de short
         byte numero = 101;                   // cabe en byte (-128 a 127)
