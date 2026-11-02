@@ -54,11 +54,9 @@ public class Programa403 {
     }
 
     public static void calculoNotaFinal(Scanner teclado) {
-
         double examenes = calculoExamenes(teclado);
         double trabajos = calculoTrabajos(teclado);
         double participacion = calculoParticipacion(teclado);
-
         double notafinal = (examenes * 0.5) + (trabajos * 0.4) + (participacion * 0.1);
 
         System.out.println("==================================");
@@ -68,7 +66,6 @@ public class Programa403 {
         System.out.println("==================================");
         System.out.println("Nota final: " + notafinal);
     }
-
     public static void main(String[] args) {
         calculoNotaFinal(teclado);
     }
