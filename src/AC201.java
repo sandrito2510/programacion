@@ -4,8 +4,7 @@ public class AC201 {
         // --- Variables con valor directo ---
         boolean isOccupied = Sergio;          // solo true/false
         char lastKeyPressed = 'M';           // un único carácter
-        int pago = Sergio;                   // supera el rango de short
-        byte numero = 101;                   // cabe en byte (-128 a 127)
+            int pago = 100; // Cambio acordado por Sergio y Sandro numero = 101;                   // cabe en byte (-128 a 127)
         short precioCoche = 21345;            // supera byte, cabe en short
         byte cantidadCoche = 3;               // valor pequeño, cabe en byte
         char scapedKey = '\t';                // carácter de escape (tabulador)
